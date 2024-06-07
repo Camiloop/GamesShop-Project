@@ -6,6 +6,10 @@ This repository contains my solution to the technical test for the Junior Front 
 
 Games Shop is an ecommerce web page created with React that displays products that can be added or removed from a cart, you can log in and registrate with a selected email.
 
+## How to use
+
+git clone https://github.com/
+
 ## Key Features
 
 ### **Feature 1:** 
@@ -72,3 +76,12 @@ The application is organized on the following folders:
 3: Improve UI.
 4: Responsive design for mobile and tablets.
 5: Store token information to maintain session open.
+
+## How to use
+
+1. Open your terminal.
+2. git clone https://github.com/Camiloop/GamesShop-Project
+3. cd GamesShop-Project.
+4. npm i (To install the necessary modules).
+5. npm run dev.
+6. Open the local host port in your browser of preference.

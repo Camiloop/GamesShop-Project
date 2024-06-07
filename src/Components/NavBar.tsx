@@ -1,7 +1,6 @@
 import { useAppSelector } from '../redux/hooks';
 import './nav.css'
 import { Link } from 'react-router-dom'
-import iconimg from '../assets/imgs/user-icon.png'
 
 const NavBar = ({setOpenCart}: any) => {
 

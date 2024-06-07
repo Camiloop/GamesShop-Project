@@ -40,8 +40,10 @@ const Product = () => {
 
   return (
     <section>
-      <button onClick={sortByName}>Sort by Name</button>
-      <button onClick={sortByPrice}>Sort by Price</button>
+      <div className='btn-container'>
+        <button onClick={sortByName}>Sort by Name</button>
+        <button onClick={sortByPrice}>Sort by Price</button>
+      </div>
       <div className="product-grid">
         {
           sortedGames().map((i) => (

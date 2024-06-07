@@ -30,18 +30,18 @@ Login and registration feature, this was implemented using the https://reqres.in
 
 **To Log in or Register you need to use a verified Email from the API you can use one of the following emails**
 
-rachel.howell@reqres.in
-george.edwards@reqres.in
-byron.fields@reqres.in
-tobias.funke@reqres.in
-lindsay.ferguson@reqres.in
-michael.lawson@reqres.in
-tracey.ramos@reqres.in
-charles.morris@reqres.in
-eve.holt@reqres.in
-emma.wong@reqres.in
-janet.weaver@reqres.in
-george.bluth@reqres.in
+rachel.howell@reqres.in,
+george.edwards@reqres.in,
+byron.fields@reqres.in,
+tobias.funke@reqres.in,
+lindsay.ferguson@reqres.in,
+michael.lawson@reqres.in,
+tracey.ramos@reqres.in,
+charles.morris@reqres.in,
+eve.holt@reqres.in,
+emma.wong@reqres.in,
+janet.weaver@reqres.in,
+george.bluth@reqres.in,
 
 ## Technologies Used
 

@@ -17,7 +17,7 @@ Games Shop is an ecommerce web page created with React that displays products th
 
 ## Key Features
 
-### **Feature 1:** 
+### Feature 1:
 
 The app displays a list of videogames in a grid, you can sort items by names or price asc or desc when clicking on the Sort buttons, the products also have a button to add it to a Shopping Cart.
 
@@ -25,13 +25,13 @@ The app displays a list of videogames in a grid, you can sort items by names or 
 
 ![image](https://github.com/Camiloop/GamesShop-Project/assets/109489683/2600b419-a8ba-423b-a6b3-054b189800b5)
 
-### **Feature 2: **
+### Feature 2: 
 
 This project includes a Shopping cart where you can see the products you have added, the quantity of them and the total price to pay, to open the cart click on the top right button that says cart, you can add items by clicking on add to cart button or by drag and dropping the items.
 
 ![image](https://github.com/Camiloop/GamesShop-Project/assets/109489683/d6040871-daee-4fb6-8743-cb465d690342)
 
-### **Feature 3:** 
+### Feature 3: 
 
 Login and registration feature, this was implemented using the https://reqres.in/ API, to properly log in you need to click on the Sign In button on the top of the page, you will see a form to log in and registration button.
 
@@ -39,34 +39,35 @@ Login and registration feature, this was implemented using the https://reqres.in
 
 **To Log in or Register you need to use a verified Email from the API you can use one of the following emails**
 
-rachel.howell@reqres.in,
-george.edwards@reqres.in,
-byron.fields@reqres.in,
-tobias.funke@reqres.in,
-lindsay.ferguson@reqres.in,
-michael.lawson@reqres.in,
-tracey.ramos@reqres.in,
-charles.morris@reqres.in,
-eve.holt@reqres.in,
-emma.wong@reqres.in,
-janet.weaver@reqres.in,
+rachel.howell@reqres.in, <br>
+george.edwards@reqres.in, <br>
+byron.fields@reqres.in, <br>
+tobias.funke@reqres.in, <br>
+lindsay.ferguson@reqres.in, <br>
+michael.lawson@reqres.in, <br>
+tracey.ramos@reqres.in, <br>
+charles.morris@reqres.in, <br>
+eve.holt@reqres.in, <br>
+emma.wong@reqres.in, <br>
+janet.weaver@reqres.in, <br>
 george.bluth@reqres.in,
 
 ## Technologies Used
 
-Vite to set up a development environment in React.
-HTML and CSS.
-TypeScript.
-React.
-Redux Toolkit to manage a Global state.
-React-Router-Dom for Routing.
+Vite to set up a development environment in React. <br>
+HTML and CSS. <br>
+TypeScript. <br>
+React. <br> 
+Redux Toolkit to manage a Global state. <br>
+React-Router-Dom for Routing. <br> 
+Styled Components to give styles to the page. <br>
 https://reqres.in/ API used for users, Login and registration feature.
 
 ## Files
 
-The application is organized on the following folders:
+The app is organized on the following folders:
 
-**assets:** Contains the images and the data for the products in a Typescript object.
+**Assets:** Contains the images and the data for the products in a Typescript object.
 
 **Components:** This folder include all the components used on the application aswell as a css file to manage their style, it is organized by navbar, cart, the products on the cart, and the product cards.
 
@@ -76,8 +77,8 @@ The application is organized on the following folders:
 
 ## Features to add
 
-1: Favorite page.
-2: Testing and handling error messages.
-3: Improve UI.
-4: Responsive design for mobile and tablets.
+1: Favorite page. <br>
+2: Testing and handling error messages. <br>
+3: Improve UI. <br>
+4: Responsive design for mobile and tablets. <br>
 5: Store token information to maintain session open.

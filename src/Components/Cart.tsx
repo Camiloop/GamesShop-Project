@@ -1,7 +1,46 @@
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import CartProducts from './CartProducts';
 import { addToCart } from '../redux/slice/cartSlice';
-import './cart.css';
+import styled from 'styled-components';
+
+const RightSideMenu = styled.section`
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 23%;
+  height: 100%;
+  background-color: black;
+  z-index: 1000;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #426583 transparent;
+  transition: transform 0.3s ease;
+`;
+
+const MenuContent = styled.div`
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+`;
+
+const CloseButton = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+`;
+
+const ContentDiv = styled.div`
+  margin-top: 20px;
+`;
+
+const Total = styled.h3`
+  margin-top:'20px';
+`;
 
 const Cart = ({ setOpenCart }: any) => {
   const dispatch = useAppDispatch();
@@ -23,21 +62,19 @@ const Cart = ({ setOpenCart }: any) => {
   };
 
   return (
-    <section className="right-side-menu" onDrop={handleDrop} onDragOver={handleDragOver}>
-      <div className="menu-content">
+    <RightSideMenu onDrop={handleDrop} onDragOver={handleDragOver}>
+      <MenuContent>
         <h2>Your cart</h2>
-        <button className="close-button" onClick={() => setOpenCart(false)}>
-          X
-        </button>
-        <div>
+        <CloseButton onClick={() => setOpenCart(false)}>X</CloseButton>
+        <ContentDiv>
           {products?.map((i) => (
-            <CartProducts key={i.id} id={i.id} img={i.img} tittle={i.tittle} price={i.price} quantity={i.quantity} />
+            <CartProducts key={i.id} id={i.id} img={i.img} title={i.tittle} price={i.price} quantity={i.quantity} />
           ))}
-        </div>
-        <h3>Total</h3>
-        <h3>${getTotal()}</h3>
-      </div>
-    </section>
+        </ContentDiv>
+        <Total>Total</Total>
+        <Total>${getTotal()}</Total>
+      </MenuContent>
+    </RightSideMenu>
   );
 };
 

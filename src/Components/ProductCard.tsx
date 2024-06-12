@@ -1,6 +1,7 @@
-import './productCard.css';
+import React from 'react';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import { addToCart } from '../redux/slice/cartSlice';
+import styled from 'styled-components';
 
 interface PropsType {
   id: number;
@@ -9,9 +10,46 @@ interface PropsType {
   price: string;
 }
 
+const ProductItem = styled.section`
+  width: 200px;
+  border: 1px solid #ddd;
+  background-color: rgba(84, 84, 86, 0.533);
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+`;
+
+const ProductImage = styled.img`
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+`;
+
+const ProductTitle = styled.h3`
+  margin-top: 10px;
+  font-size: 18px;
+`;
+
+const ProductPrice = styled.p`
+  margin-top: 5px;
+  font-size: 16px;
+`;
+
+const AddToCartButton = styled.button`
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid rgb(64, 64, 194);
+  }
+`;
+
 const ProductCard: React.FC<PropsType> = ({ id, tittle, img, price }) => {
   const dispatch = useAppDispatch();
-
   const store = useAppSelector((store) => store.cart);
 
   const addProductToCart = () => {
@@ -33,14 +71,14 @@ const ProductCard: React.FC<PropsType> = ({ id, tittle, img, price }) => {
   };
 
   return (
-    <section className="product-item" draggable onDragStart={handleDragStart}>
+    <ProductItem draggable onDragStart={handleDragStart}>
       <div>
-        <img src={img} alt={tittle} />
+        <ProductImage src={img} alt={tittle} />
       </div>
-      <h3>{tittle}</h3>
-      <p>${price}</p>
-      <button onClick={addProductToCart}>Add to cart</button>
-    </section>
+      <ProductTitle>{tittle}</ProductTitle>
+      <ProductPrice>${price}</ProductPrice>
+      <AddToCartButton onClick={addProductToCart}>Add to cart</AddToCartButton>
+    </ProductItem>
   );
 };
 

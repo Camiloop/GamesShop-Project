@@ -29,6 +29,7 @@ const SignInButton = styled(Link)`
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s;
+  text-align: center;
 
   &:hover {
     background-color: #555;

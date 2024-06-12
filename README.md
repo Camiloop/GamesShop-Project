@@ -21,7 +21,7 @@ Games Shop is an ecommerce web page created with React that displays products th
 
 The app displays a list of videogames in a grid, you can sort items by names or price asc or desc when clicking on the Sort buttons, the products also have a button to add it to a Shopping Cart.
 
-##**You can also DRAG AND DROP the products to the opened cart to add them!!!**
+## *You can also DRAG AND DROP the products to the opened cart to add them!!!**
 
 ![image](https://github.com/Camiloop/GamesShop-Project/assets/109489683/2600b419-a8ba-423b-a6b3-054b189800b5)
 
